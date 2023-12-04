@@ -1,0 +1,68 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "express": "^4.18.2",
+    "nx": "17.1.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "fcc-learn-npm-package-json": [
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "14271377523554513778"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "6337200966971912744"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "9676822978056026791"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "14667332912953213174"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "README.md",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "nx.json",
+          "hash": "1933931062316644608"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "11660323791271388898"
+        },
+        {
+          "file": "package.json",
+          "hash": "14841057897236361527",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "public/style.css",
+          "hash": "5469208304582560553"
+        },
+        {
+          "file": "server.js",
+          "hash": "12007870489220814259"
+        },
+        {
+          "file": "views/index.html",
+          "hash": "536288200798249745"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
