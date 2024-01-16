@@ -1,0 +1,37 @@
+:root {
+    --neutral: #232946;
+    --base-100: #fffffe;
+    --neutral-focus: #121629;
+}
+
+* {
+    margin: 0;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--neutral);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--neutral-focus);
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    font-family: serif;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--base-100);
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
