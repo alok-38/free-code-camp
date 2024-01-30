@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(247, 176, 44);
+}
+
+a:hover {
+    color: orangered;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin: 15px auto;
+}
+
+h1,h2,h3 {
+    color: orangered;
+}
+
+main {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+strong,em{
+    color: orangered;
+}
+
+section {
+    margin-top: 25px;
+    border: 1px solid rgb(247, 176, 44);
+}
+
+section:hover {
+    background-color: rgb(252, 192, 81);
+    color: #fff;
+}
+
+section a {
+    color: #fff;
+}
+
+section:nth-child(4) {
+    border: none;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    padding: 25px;
+    border: .1px solid rgb(214, 209, 209);
+}
+
+fieldset:hover {
+    border: 1px solid orangered;
+}
+
+input[type="text"] {
+    margin-top: 25px;
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    background-color: rgb(249, 233, 227);
+    height: 40px;
+    margin-right: 25px;
+    width: 50%;
+}
+
+fieldset:nth-child(1) label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset:nth-child(1) input {
+    margin-right: 10px;
+}
+
+fieldset:nth-child(1) input[type="radio"] {
+    border: 2px solid orangered;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+fieldset:nth-child(2) label {
+    margin-right: 15px;
+}
+
+input:hover,
+input:focus {
+    border: .5px solid orangered;
+}
+
+input::placeholder {
+    color: #999; 
+    letter-spacing: 1px;
+}
+
+button {
+    padding: 10px 35px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: orangered;
+    color: #fff;
+    outline: none;
+    border: none;
+    height: 40px;
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(249, 105, 53);
+}
+
+footer {
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: orange;
+    color: #fff;
+    padding: 25px;
+}
+
+footer a {
+    color: #fff;
+}
