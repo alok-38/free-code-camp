@@ -47,17 +47,8 @@ strong,em{
 
 section {
     margin-top: 25px;
-    border: 1px solid rgb(247, 176, 44);
 }
 
-section:hover {
-    background-color: rgb(252, 192, 81);
-    color: #fff;
-}
-
-section a {
-    color: #fff;
-}
 
 section:nth-child(4) {
     border: none;
@@ -98,7 +89,7 @@ fieldset:nth-child(1) input {
     margin-right: 10px;
 }
 
-fieldset:nth-child(1) input[type="radio"] {
+fieldset:first-child input[type="radio"] {
     border: 2px solid orangered;
     border-radius: 50%;
     height: 20px;
