@@ -27,6 +27,7 @@ img {
     display: block;
     margin: auto;
     margin: 15px auto;
+    width: 50%;
 }
 
 h1,h2,h3 {
@@ -35,7 +36,7 @@ h1,h2,h3 {
 
 main {
     text-align: center;
-    width: 50%;
+    max-width: 800px;
     margin: auto;
     line-height: 1.6;
     letter-spacing: 1px;
@@ -136,4 +137,29 @@ footer {
 
 footer a {
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 90%;
+    }
+    /* Adjust input and button to appear as block-level elements on smartphones */
+    input[type="text"],
+    button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px; /* Optional: Add some spacing between input and button */
+    }
+
+    section:nth-child(4) {
+        margin-bottom: 25px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    footer {
+        margin: 0;
+    }
 }
