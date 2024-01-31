@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0  auto;
+    line-height: 1.6;
+}
+
+label, input {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+input {
+    padding: 10px 45px;
+    cursor: pointer;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 10px 45px;
+    cursor: pointer;
+}
+
+textarea {
+    padding: 25px 45px;
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 45px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    cursor: pointer;
+}
