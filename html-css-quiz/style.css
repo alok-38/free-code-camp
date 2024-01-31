@@ -173,9 +173,12 @@ button {
     width: 30%;
     padding: 15px;
     font-size: 23px;
-    background: #d0d0d5;
-    border: 3px solid #3b3b4f;
+    background: #f1be32;
     cursor: pointer;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
 footer, footer a {
@@ -186,4 +189,89 @@ footer {
     background-color: #2a2a40;
     display: flex;
     justify-content: center;
+}
+
+address {
+    text-align: center;
+    padding: 0.3em;
+}
+
+ footer a {
+    color: #dfdfe2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Input elements */
+input:hover,
+input:focus {
+    border-color: #f1be32; /* Change border color on hover and focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(241, 190, 50, 0.5); /* Add a subtle shadow on focus */
+}
+
+/* Button element */
+button:hover,
+button:focus {
+    background-color: #f3b710; /* Change background color on hover and focus */
+    color: #fff; /* Change text color on hover and focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="text"],
+input[type="text"],
+input[type="email"],
+input[type="email"],
+input[type="number"],
+input[type="number"],
+input[type="date"]{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #f5edd9;
+    padding: 5px 35px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="number"]:hover,
+input[type="number"]:focus,
+input[type="date"]:hover,
+input[type="date"]:focus  {
+    border: 2px solid #f1be32; /* Change border color on hover and focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(241, 190, 50, 0.5);
+    padding: 5px 35px;
+    margin: 5px 0;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #f5edd9;
+    padding: 5px 35px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+textarea:hover,
+textarea:focus {
+    border: 2px solid #f1be32;
+    box-shadow: 0 0 5px rgba(241, 190, 50, 0.5);
+}
+
+input[type="radio"] {
+    outline: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
 }
