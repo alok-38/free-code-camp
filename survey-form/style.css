@@ -6,6 +6,9 @@
 
 h1, p {
     text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 25px;
 }
 
 form {
@@ -18,8 +21,19 @@ label, input {
     display: block;
 }
 
+label[for="name"] {
+    margin-top: 15px;
+}
+
 input, textarea {
     width: 100%;
+    outline: none;
+    border: .5px solid rgb(199, 195, 195);
+}
+
+textarea:hover,
+textarea:focus {
+    border: 2px solid #007bff;
 }
 
 input {
@@ -33,9 +47,15 @@ input {
     cursor: pointer;
 }
 
+#dropdown:hover,
+#dropdown:focus {
+    border: 2px solid #007bff;
+}
+
 textarea {
     padding: 25px 45px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 fieldset {
@@ -48,8 +68,67 @@ button {
     padding: 10px 45px;
     letter-spacing: 1px;
     cursor: pointer;
+    background-color: #007bff;
+    outline: none;
+    border: none;
+    color: #ffffff;
 }
 
-input[type="checkbox"], input[type="radio"] {
+button:hover,
+button:focus {
+    background-color: #469df9;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
     cursor: pointer;
+    vertical-align: middle;
+    width: unset;
+    display: inline-flex;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 0;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover,
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+    border: 2px solid #007bff;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+}
+
+input[type="radio"]::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+    border-radius: 50%; /* Set border-radius to 50% for circle shape */
+}
+
+/* Hover and Focus States */
+input[type="checkbox"]:hover::before,
+input[type="radio"]:hover::before,
+input[type="checkbox"]:focus::before,
+input[type="radio"]:focus::before {
+    border: 3px solid #007bff;
+}
+
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
+    background-color: #007bff;
+}
+
+fieldset {
+    margin: 15px 0;
 }
