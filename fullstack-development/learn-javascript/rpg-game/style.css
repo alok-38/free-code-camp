@@ -16,6 +16,7 @@ body {
     color: #ffffff;
     margin: 0 auto;
     padding: 10px;
+    border: 4px solid orangered;
 }
 
 #controls {
