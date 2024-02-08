@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Solar System</h1>
+        <h2>Planets</h2>
+        <table id="planetTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Diameter (km)</th>
+                    <th>Mass (kg)</th>
+                    <th>Distance from Sun (million km)</th>
+                    <th>Orbital Period (Earth days)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="star" data-planet="Sun">
+                    <td>Sun</td>
+                    <td>1,391,684</td>
+                    <td>1.99 x 10^30</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr class="planet" data-planet="Mercury">
+                    <td>Mercury</td>
+                    <td>4,880</td>
+                    <td>3.30 x 10^23</td>
+                    <td>57.9</td>
+                    <td>88</td>
+                </tr>
+                <tr class="planet" data-planet="Venus">
+                    <td>Venus</td>
+                    <td>12,104</td>
+                    <td>4.87 x 10^24</td>
+                    <td>108.2</td>
+                    <td>225</td>
+                </tr>
+                <tr class="planet" data-planet="Earth">
+                    <td>Earth</td>
+                    <td>12,742</td>
+                    <td>5.97 x 10^24</td>
+                    <td>149.6</td>
+                    <td>365.25</td>
+                </tr>
+                <tr class="planet" data-planet="Mars">
+                    <td>Mars</td>
+                    <td>6,779</td>
+                    <td>6.42 x 10^23</td>
+                    <td>227.9</td>
+                    <td>687</td>
+                </tr>
+                <tr class="planet" data-planet="Jupiter">
+                    <td>Jupiter</td>
+                    <td>139,820</td>
+                    <td>1.90 x 10^27</td>
+                    <td>778.6</td>
+                    <td>4,333</td>
+                </tr>
+                <tr class="planet" data-planet="Saturn">
+                    <td>Saturn</td>
+                    <td>116,460</td>
+                    <td>5.68 x 10^26</td>
+                    <td>1,429</td>
+                    <td>10,747</td>
+                </tr>
+                <tr class="planet" data-planet="Uranus">
+                    <td>Uranus</td>
+                    <td>50,724</td>
+                    <td>8.68 x 10^25</td>
+                    <td>2,871</td>
+                    <td>30,589</td>
+                </tr>
+                <tr class="planet" data-planet="Neptune">
+                    <td>Neptune</td>
+                    <td>49,244</td>
+                    <td>1.02 x 10^26</td>
+                    <td>4,498</td>
+                    <td>59,800</td>
+                </tr>
+                <tr class="planet" data-planet="Pluto">
+                    <td>Pluto</td>
+                    <td>2,377</td>
+                    <td>1.31 x 10^22</td>
+                    <td>5,874</td>
+                    <td>90,560</td>
+                </tr>
+                <tr class="planet" data-planet="Asteroid Belt">
+                    <td>Asteroid Belt</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Between Mars and Jupiter</td>
+                    <td>N/A</td>
+                </tr>
+                <tr class="planet" data-planet="Kuiper Belt">
+                    <td>Kuiper Belt</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Beyond Neptune</td>
+                    <td>N/A</td>
+                </tr>
+                <tr class="planet" data-planet="Oort Cloud">
+                    <td>Oort Cloud</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Extends far beyond the Kuiper Belt</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="planetDetails">
+            <!-- Planet details will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>
