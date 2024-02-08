@@ -1,0 +1,39 @@
+* {
+    font-family: "Epilogue", sans-serif;
+    font-size: 1.3rem;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+  
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav,
+.cta-btns,
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+}
+
+.logos-section {
+    display: flex;
+}
+  
+.menu-items li,
+.cta-btns li {
+  font-size: 0.7rem;
+  margin-right: 1rem;
+  color: hsl(0, 0%, 41%);
+}
