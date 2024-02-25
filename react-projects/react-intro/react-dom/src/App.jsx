@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Greeting component
-function Greeting() {
+function GreetingandCount() {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -32,4 +32,4 @@ function CounterControls({ onIncrement }) {
   return <button onClick={onIncrement}>Increment Count</button>;
 }
 
-export default Greeting
+export default GreetingandCount
