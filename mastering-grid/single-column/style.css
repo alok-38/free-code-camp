@@ -88,3 +88,30 @@ body {
         height: 300px;
     }
 }
+
+/* For three column layout */
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "nav content sidebar"
+            "nav content ad"
+            "footer footer footer";
+    }
+    .sidebar {
+        height: 300px;
+    }
+
+    .navbar {
+        height: auto
+    }
+
+    .content {
+        height: auto;
+    }
+
+    .footer {
+        height: 250px;
+    }
+}
