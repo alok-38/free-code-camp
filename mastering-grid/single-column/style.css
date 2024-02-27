@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: coral;
+    height: 100px;
+    color: #ffffff;
+}
+
+nav {
+    background-color: blueviolet;
+    height: 200px;
+}
+
+article {
+    background-color:cadetblue;
+    height: 300px;
+    color: whitesmoke;
+}
+
+aside {
+    background-color: rebeccapurple;
+    color: #ffffff;
+    height: 100px;
+}
+
+.ad {
+    background-color: orange;
+    color: floralwhite;
+    height: 100px;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+}
