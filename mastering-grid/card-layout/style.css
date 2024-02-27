@@ -1,0 +1,28 @@
+body {
+    margin: 40px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #b0bec5;
+}
+
+.container > * {
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    margin: 0;
+}
+
+.card,
+.tall-card {
+    background-color: #455a64;
+}
+
+header,
+footer {
+    background-color: rebeccapurple;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
