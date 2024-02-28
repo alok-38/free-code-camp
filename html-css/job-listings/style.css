@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header img {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+    display: block;
+}
+
+/* Nav */
+nav a img {
+    width: 75px;
+    margin: 1%;
+    padding-left: 25px;
+}
+
+/* Main */
+main div img {
+    width: 350px;
+    object-fit: cover;
+    float: right;
+    border-radius: 15px;
+}
+
+main div p {
+    width: 50%;
+}
+
+/* Footer */
+footer {
+    clear: both;
+}
