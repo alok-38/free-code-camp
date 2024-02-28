@@ -4,51 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job listing</title>
+    <title>Jovian Job Listings</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
-        <a href="index.html"><img src="./images/logo.jfif" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="./images/logo.jfif" alt="logo"></a>
     </nav>
     <header>
         <img src="./images/great.avif" alt="do something great">
     </header>
     <main>
-        <div class="container">
+        <section class="about-section">
             <h1>About Jovian</h1>
-            <div>
-                <p>At Jovian, we're on a mission to build the world's most
-                    highly reputed technical university, and we're building
-                    completely online. We offer several beginner freindly
-                    courses that are taken by 300,000+ registered users.
-                </p>
-                <p>We also offer 2 industry-focused bootcampts.</p>
-                <ol>
-                    <li><a href="https://jovian.com/aakashns/full-stack-developer-bootcamp">Jovian Full Stack Developer
-                            Bootcamp
-                        </a></li>
-                    <li><a href="https://jovian.com/learn/zero-to-data-analyst-bootcamp">Jovian Data Science and Machine
-                            Learning Bootcamp</a></li>
-                </ol>
-            </div>
-            <div>
-                <img src="./images/job.avif" alt="getting things done">
-            </div>
-        </div>
-        <div class="container">
-            <h2>Job Opportunities</h2>
+            <div id="description">
 
-        </div>
+                <p>At Jovian, we're on a mission to build
+                    the world's most highly reputed technical
+                    university, and we're building completely
+                    online. We offer several beginner friendly
+                    courses that are taken by 300,000+ registered
+                    users.
+                </p>
+                <p>We also offer 2 industry-focused bootcamps:
+                <ol>
+                    <li>
+                        <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+                            Jovian Full Stack Developer Bootcamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.jovian.com/data-science-bootcamp">
+                            Jovian Data Science Bootcamp
+                        </a>
+                    </li>
+                </ol>
+                </p>
+            </div>
+            <img src="./images/job.avif" height="240" alt="team" id="team">
+        </section>
+        <section class="job-section">
+            <h2>Job Opportunities</h2>
+            <div>
+                <a href="mailto:support@jovian.com?subject=Application%20for%20Frontend%20Developer"
+                    style="float:right;" target="_blank">Apply</a>
+                <h3>Frontend Developer</h3>
+                <span class="location">Bengaluru, India</span>
+            </div>
+            <div>
+                <a href="mailto:support@jovian.com?subject=Application%20for%20Backend%20Developer" style="float:right;"
+                    target="_blank">Apply</a>
+                <h3>Backend Developer</h3>
+                <span class="location">Delhi, India</span>
+            </div>
+            <div>
+                <a href="mailto:support@jovian.com?subject=Application%20for%20Data%20Scientist" style="float:right;"
+                    target="_blank">Apply</a>
+                <h3>Data Scientist</h3>
+                <span class="location">Mumbai, India</span>
+            </div>
+        </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">YouTube</a></li>
+        <ul id="footer-links">
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@jovianhq" target="_blank">
+                    YouTube
+                </a>
+            </li>
         </ul>
-        <p>&copy; 2024, Alok</p>
+        <span id="copyright">© 2023, Jovian</span>
     </footer>
 </body>
 
