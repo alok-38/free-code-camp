@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 5px;
+}
+
+/* Header */
+header img {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+}
