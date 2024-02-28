@@ -106,3 +106,48 @@ a {
 h3 {
     margin-bottom: 8px;
 }
+
+/* Mobile responsive */
+/* For screens smaller than 768px wide */
+@media only screen and (max-width: 767px) {
+    .logo {
+        display: block;
+        margin: auto;
+    }
+
+    header img {
+        display: block;
+        width: 90%;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    main .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .about-section p {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    #team {
+        width: 90%;
+        margin: auto;
+    }
+
+    .job-section div {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    ol {
+        width: 100%;
+    }
+}
