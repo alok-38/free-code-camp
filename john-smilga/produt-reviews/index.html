@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product Reviews</h1>
+        <div id="reviews-container"></div>
+        <form id="add-review-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="text" id="review-text" placeholder="Your Review" required>
+            <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
