@@ -153,3 +153,50 @@ tfoot td {
     font-size: 0.9em;
     text-align: center;
 }
+
+
+/* Vacation */
+#vacation {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.places-to-visit,
+.places-to-avoid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adjust the spacing between sections */
+}
+
+.places-to-visit ul,
+.places-to-avoid dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.places-to-visit li,
+.places-to-avoid dt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Adjust the spacing between items */
+}
+
+.places-to-visit figure,
+.places-to-visit address,
+.places-to-avoid dd {
+    margin: 0;
+}
+
+/* footer */
+footer {
+    background-color: rgb(50, 48, 48);
+    padding: 2em;
+}
+
+footer a,
+p {
+    color: #ffffff;
+}
