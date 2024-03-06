@@ -4,27 +4,52 @@
     box-sizing: border-box;
 }
 
+/* Apply Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Improve readability with increased line height */
+body,
+p,
+h1,
+h2,
+h3 {
+    line-height: 1.6;
+}
+
+/* Add a background color to the body */
+body {
+    background-color: #f4f4f4;
+}
+
 ul {
     list-style-type: none;
 }
 
 a {
+    color: #007bff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 img {
     object-fit: cover;
     display: block;
+    border-radius: 4px;
 }
 
 /* Header */
 header {
     background-color: tomato;
     padding: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     text-align: center;
+    color: #ffffff;
+    letter-spacing: 2px;
 }
 
 /* Nav */
@@ -49,21 +74,104 @@ nav ul li a:active {
 }
 
 hr {
-    margin-bottom: 25px;
+    display: none;
 }
 
-/* Main */
+/* Center main content */
 main {
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add padding and border to sections */
+section {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #html {
-    max-width: 500px;
-    margin: 0 auto 25px auto;
+    width: 50%;
+    margin: auto;
 }
 
-/* Footer */
-footer {
+h2 {
     text-align: center;
+}
+
+/* Apply Flexbox to the vacation section */
+#vacation {
+    display: flex;
+    flex-direction: column;
+    /* Center content horizontally */
+}
+
+/* Adjust spacing between child elements */
+#vacation>* {
+    margin-bottom: 20px;
+}
+
+/* Align the last section to the right */
+#vacation > section:last-child {
+    margin-left: auto;
+}
+
+/* Accessibility improvement */
+abbr {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* Make footer stand out */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 1000px) {
+    header a {
+        font-size: 2em;
+    }
+
+    body {
+        margin: 1em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    #html section img {
+        width: 50%;
+        margin: auto;
+    }
+
+    figure img {
+        display: block;
+        object-fit: cover;
+        width: 80%;
+        margin: auto;
+        height: 400px;
+    }
+
+    article section:nth-child(5) {
+        width: 100%;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    ol {
+        list-style-type: none;
+    }
+
 }
