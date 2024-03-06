@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: tomato;
+    padding: 2em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: floralwhite;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav ul li a:active {
+    color: floralwhite;
+}
+
+hr {
+    margin-bottom: 25px;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#html {
+    max-width: 500px;
+    margin: 0 auto 25px auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
