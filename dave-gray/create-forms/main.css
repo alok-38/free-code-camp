@@ -16,6 +16,7 @@ ol {
 
 table {
     border-collapse: collapse;
+    width: 50%;
 }
 
 a {
@@ -229,12 +230,52 @@ address {
 
 /* contact */
 #contact {
-    width: 30%;
+    width: 50%;
     margin: auto;
     line-height: 2;
 }
 
 #contact form fieldset {
     padding: 2.5em;
+    background-color: #f5c0d3;
 }
 
+#contact form fieldset:first-child input {
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px 45px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#contact form fieldset:first-child input:hover,
+#contact form fieldset:first-child input:focus {
+    border: 2px rgb(238, 72, 100) solid;
+}
+
+#contact form fieldset:first-child input[type="text"] {
+    margin-left: 35px;
+}
+
+#contact form fieldset:first-child input[type="password"] {
+    margin-left: 45px;
+}
+
+#contact form fieldset:first-child input[type="tel"] {
+    margin-left: 65px;
+}
+
+#contact form fieldset:first-child select {
+    width: 100%;
+    padding: 2.5em;
+}
+
+#contact form fieldset:first-child select optgroup {
+    margin-bottom: 15px;
+}
+
+#contact form fieldset:first-child select optgroup option {
+    margin-bottom: 5px;
+}
