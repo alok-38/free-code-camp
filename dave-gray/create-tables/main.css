@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 2;
+}
+
+body {
+    background-color: #f9f5f5;
+    color: rgb(41, 37, 37);
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 2em;
+    background-color: rgb(249, 84, 24);
+}
+
+h1 {
+    color: floralwhite;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 25px;
+    letter-spacing: 1.5px;
+}
+
+header nav ul a {
+    color: floralwhite;
+}
+
+header nav ul a:hover {
+    color: rgb(18, 16, 16);
+}
+
+/* html */
+#html {
+    width: 50%;
+    margin: 50px auto;
+}
+
+#html h2,
+#html h3,
+#html p {
+    text-align: center;
+}
+
+#html img {
+    display: block;
+    object-fit: cover;
+    margin: auto;
+}
+
+#html section ol {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+aside {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgb(241, 175, 52);
+    color: #ffffff;
+}
+
+#html figcaption {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+thead th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody th,
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot td {
+    padding: 10px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+th[scope="row"] {
+    background-color: #f0f0f0;
+}
+
+td[rowspan] {
+    vertical-align: top;
+}
+
+time {
+    font-style: italic;
+}
+
+tfoot td {
+    background-color: #f0f0f0;
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: center;
+}
