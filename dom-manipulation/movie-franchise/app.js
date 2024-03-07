@@ -11,3 +11,8 @@ if (lastListItem) {
     console.log('No last list item found.');
 }
 
+const allListItems = document.querySelectorAll('li');
+allListItems.forEach(function(li) {
+    li.style.backgroundColor = 'lightblue';
+    li.style.color = 'whitesmoke';
+});
