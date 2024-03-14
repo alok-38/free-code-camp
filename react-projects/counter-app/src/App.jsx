@@ -18,10 +18,10 @@ function App() {
       </div>
       <h1>Counter</h1>
       <div className="card">
-        <button onClick={() => setCount((prevCount) => prevCount + 1)}> {/* Changed count to prevCount */}
+        <button onClick={() => setCount((count) => count + 1)}> {/* Changed count to prevCount */}
           Increase count
         </button>
-        <button onClick={() => setCount((prevCount) => prevCount - 1)}> {/* Changed count to prevCount */}
+        <button onClick={() => setCount((count) => count - 1)}> {/* Changed count to prevCount */}
           Decrease count
         </button>
         <p>Count is {count}</p> {/* Moved count display outside of buttons */}
