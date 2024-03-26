@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer>
+        <footer className="text-center">
             <p>© 2021</p>
         </footer>
     );

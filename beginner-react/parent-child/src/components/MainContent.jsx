@@ -1,6 +1,6 @@
 function MainContent() {
     return (
-        <div>
+        <div className="text-center bg-orange-200 p-72">
             <p>This is the main content.</p>
         </div>
     );
