@@ -1,12 +1,21 @@
-import './App.css';
-import Header from './components/Header';
+import React from 'react';
 
-function App() {
+import './App.css';
+
+import { books } from './components/Books';
+import Book from './components/Book';
+
+function BookList() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <>
+      <h1>amazon best sellers</h1>
+      <section className='booklist'>
+        {books.map((book) => {
+          return <Book {...book} key={book.id} />;
+        })}
+      </section>
+    </>
   );
 }
 
-export default App;
+export default BookList;
