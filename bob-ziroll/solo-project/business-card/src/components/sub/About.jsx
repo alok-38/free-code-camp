@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div>
+        <div className="text-[#F5F5F5]">
             <h3>About</h3>
             <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
             <h3>Interests</h3>

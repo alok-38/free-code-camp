@@ -5,7 +5,7 @@ import github from '../assets/images/GitHub Icon.png';
 
 const Footer = () => {
     return (
-        <footer className='flex'>
+        <footer className='flex mx-auto mt-5 w-[50%] gap-5'>
             <a href="https://www.facebook.com/" className="footer-btn" target="_blank" rel="noreferrer">
                 <img className='footer-btn' src={facebook} alt="Facebook" />
             </a>
