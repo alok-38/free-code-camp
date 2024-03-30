@@ -7,12 +7,12 @@ import group79 from '../assets/images/Group 79.png';
 
 const Cards = () => {
     return (
-        <div className="cards">
+        <div className="cards flex gap-5">
             <div className="cards__card">
                 <img src={image12} alt="image12" />
                 <div className="cards__card__content">
                 </div>
-                <div className="cards__card">
+                <div className="cards__card mt-5">
                     <img src={group65} alt="group 65" />
                     <div className="cards__card__content">
                     </div>
@@ -22,7 +22,7 @@ const Cards = () => {
                 <img src={wedding} alt="wedding photography" />
                 <div className="cards__card__content">
                 </div>
-                <div className="cards__card">
+                <div className="cards__card mt-5">
                     <img src={group78} alt="group 78" />
                     <div className="cards__card__content">
                     </div>
@@ -32,7 +32,7 @@ const Cards = () => {
                 <img src={bike} alt="mountain bike" />
                 <div className="cards__card__content">
                 </div>
-                <div className="cards__card">
+                <div className="cards__card mt-5">
                     <img src={group79} alt="group 79" />
                     <div className="cards__card__content">
                     </div>

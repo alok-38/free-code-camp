@@ -6,7 +6,7 @@ import Cards from './components/Cards';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App max-w-[50%] mx-auto">
       <Navbar />
       <Hero />
       <Description />
