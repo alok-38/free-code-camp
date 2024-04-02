@@ -36,3 +36,21 @@ main {
 h1 {
     color: tomato;
 }
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 45px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: tomato;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(253, 147, 129);
+}
