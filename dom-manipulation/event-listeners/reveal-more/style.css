@@ -1,0 +1,67 @@
+/* Add this CSS to your existing style.css file */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: darkorange;
+    color: floralwhite;
+}
+
+.container {
+    width: 30%;
+    display: flex;
+    gap: 5px;
+    height: 25vh;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: .5px solid floralwhite;
+    color: floralwhite;
+}
+
+button:hover,
+button:focus {
+    background-color: orangered;
+}
+
+/* Override the hover effect when the button is clicked */
+button:active {
+    background-color: transparent;
+}
+
+.boxes {
+    padding: 45px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    font-size: 1em;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-content {
+    border: .5px solid floralwhite;
+    display: none;
+}
+
+.hidden-content.reveal-btn {
+    display: block;
+}
