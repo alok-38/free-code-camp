@@ -1,0 +1,20 @@
+section {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: aliceblue;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    background-color: brown;
+}
