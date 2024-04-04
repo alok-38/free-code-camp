@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ef3f1f;
+    padding: 25px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: aliceblue;
+}
+
+input {
+    margin-left: 5px;
+}
+
+button,
+input {
+    padding: 10px 45px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    letter-spacing: 1px;
+}
+
+label {
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+/* button:hover,
+input:hover,
+button:focus,
+input:focus {
+    background-color: rgb(239, 63, 31);
+    color: aliceblue;
+} */
