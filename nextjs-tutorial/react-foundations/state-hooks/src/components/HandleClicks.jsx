@@ -1,5 +1,5 @@
-const handleClick = (setLikes, likes) => {
+const HandleClicks = (setLikes, likes) => {
     setLikes(likes + 1);
 }
 
-export default handleClick;
+export default HandleClicks;
