@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+input {
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: rgb(140, 30, 243);
+    color: floralwhite;
+    padding: 10px 45px;
+    outline: none;
+    border: 0;
+    margin-bottom: 25px;
+}
+
+input:hover,
+input:focus {
+    background-color: rgb(158, 66, 245);
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Adjust padding and margin for smaller screens */
+@media (max-width: 767.98px) {
+    th,
+    td {
+        padding: 0.5rem;
+    }
+}
+
+/* Additional styling for demonstration purposes */
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #ffffff;
+}
