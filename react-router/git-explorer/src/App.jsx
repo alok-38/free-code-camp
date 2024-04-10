@@ -1,7 +1,13 @@
-function App() {
+import Home from './components/Home'
+import { Route, Routes } from 'react-router-dom'
+import About from './components/About'
 
+function App() {
   return (
-    <div className="text-5xl">App</div>
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+      <Route path='/About' element={<About />} />
+    </Routes>
   )
 }
 
