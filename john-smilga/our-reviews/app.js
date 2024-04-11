@@ -30,8 +30,55 @@ const reviews = [
     },
   ];
 
-// Grab all the buttons
+// Grab all the elements
 const previousButton = document.querySelector('.prev-btn');
 const nextButton = document.querySelector('.next-btn');
 const randomButton = document.querySelector('.random-btn');
+const personImg = document.getElementById('person-img');
+const author = document.getElementById('author');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
+const h2Element = document.querySelector('h2');
 
+// Initialize current review index
+let currentReviewIndex = 0;
+
+// Function to display review
+function displayReview(index) {
+    const review = reviews[index];
+    personImg.src = review.img;
+    author.textContent = review.name;
+    job.textContent = review.job;
+    info.textContent = review.text;
+}
+
+// Show initial review
+displayReview(currentReviewIndex);
+
+// Event listener for next button
+nextButton.addEventListener('click', () => {
+    currentReviewIndex++;
+    if (currentReviewIndex === reviews.length) {
+        currentReviewIndex = 0;
+    }
+    if (currentReviewIndex === 0) {
+        h2Element.textContent = 'End of Reviews';
+    }
+    displayReview(currentReviewIndex);
+});
+
+// Event listener for previous button
+previousButton.addEventListener('click', () => {
+    currentReviewIndex--;
+    if (currentReviewIndex < 0) {
+        currentReviewIndex = reviews.length - 1;
+    }
+    displayReview(currentReviewIndex);
+});
+
+// Event listener for random button
+randomButton.addEventListener('click', () => {
+    currentReviewIndex = Math.floor(Math.random() * reviews.length);
+    h2Element.textContent = 'Our Reviews';
+    displayReview(currentReviewIndex);
+});
