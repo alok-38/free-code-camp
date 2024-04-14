@@ -1,13 +1,11 @@
-import Image from '../components/books/Image'
-import Title from './books/Title'
-import Author from './books/Author'
-
 export default function Book() {
+    const { img, title, author } = props;
+
     return (
-        <article>
-            <Image />
-            <Title />
-            <Author />
+        <article className="book">
+            <img src={img} alt={title}></img>
+            <h2>{title}</h2>
+            <h4>{author} </h4>
         </article>
-    )
+    );
 }

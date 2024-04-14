@@ -1,9 +1,9 @@
-import Book from './components/Book'
+import Books from './components/Books'
 
 export default function App() {
   return (
     <div>
-      <Book />
+      <Books />
     </div>
   )
 }
