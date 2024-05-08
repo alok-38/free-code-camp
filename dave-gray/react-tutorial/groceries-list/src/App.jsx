@@ -4,9 +4,9 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <main className="flex flex-col items-center mt-10 justify-center leading-10">
+    <main className="flex flex-col items-center justify-center leading-10 min-h-screen">
       <Header />
-      <Content />
+      <Content className="flex-grow" />
       <Footer />
     </main>
   );
