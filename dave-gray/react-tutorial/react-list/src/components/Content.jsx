@@ -25,47 +25,47 @@ export default function Content() {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
-    // localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
   const handleDelete = (id) => {
     const listItems = items.filter((item) => item.id !== id);
     setItems(listItems);
-    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
   return (
     <main>
       {items.length ? (
-        <ul className="flex flex-col space-y-2">
-          {items.map((item) => (
-            <li
-              key={item.id}
-              className="flex items-center hover:bg-gray-100 transition duration-300"
-            >
-              <input
-                type="checkbox"
-                onChange={() => handleCheck(item.id)}
-                checked={item.checked}
-                className="mr-2 cursor-pointer h-6 w-6"
-              />
-              <label
-                className={item.checked ? "line-through" : ""}
-                onDoubleClick={() => handleCheck(item.id)}
+        <div>
+          <ul className="flex flex-col space-y-2">
+            {items.map((item) => (
+              <li
+                key={item.id}
+                className="flex items-center hover:bg-gray-100 transition duration-300"
               >
-                {item.item}
-              </label>
-              <div className="ml-auto">
-                <FaTrashAlt
-                  onClick={() => handleDelete(item.id)}
-                  role="button"
-                  tabIndex="0"
-                  className="cursor-pointer transition duration-300 hover:text-red-600 text-red-400 h-6 w-6"
+                <input
+                  type="checkbox"
+                  onChange={() => handleCheck(item.id)}
+                  checked={item.checked}
+                  className="mr-2 cursor-pointer"
                 />
-              </div>
-            </li>
-          ))}
-        </ul>
+                <label
+                  className={item.checked ? "line-through" : ""}
+                  onDoubleClick={() => handleCheck(item.id)}
+                >
+                  {item.item}
+                </label>
+                <div className="ml-auto">
+                  <FaTrashAlt
+                    onClick={() => handleDelete(item.id)}
+                    role="button"
+                    tabIndex="0"
+                    className="cursor-pointer transition duration-300 hover:text-red-600"
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : (
         <p style={{ marginTop: "2rem" }}>Your list is empty.</p>
       )}
