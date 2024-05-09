@@ -27,19 +27,32 @@ export default function Content() {
     setItems(updatedItems);
   };
 
+  const handleDeleteItem = (itemId) => {
+    const updatedItems = items.filter((item) => item.id !== itemId);
+    setItems(updatedItems);
+  };
+
   return (
     <main>
       <ul>
         {items.map((item) => (
-          <li className="flex items-center justify-between text-slate-600" key={item.id}>
+          <li
+            className="flex items-center justify-between text-slate-600"
+            key={item.id}
+          >
             <input
               className="mr-5 w-6 h-6 cursor-pointer transform hover:scale-110 transition duration-300"
               type="checkbox"
               checked={item.checked}
               onChange={() => handleCheckboxChange(item.id)}
             />
-            <label htmlFor="">{item.item}</label>
-            <FaTrashAlt className="ml-10 cursor-pointer text-red-500 transition duration-300 transform hover:scale-110 w-6 h-6" />
+            <label htmlFor="" className={item.checked ? "line-through" : ""}>
+              {item.item}
+            </label>
+            <FaTrashAlt
+              className="ml-10 cursor-pointer text-red-500 transition duration-300 transform hover:scale-110 w-6 h-6"
+              onClick={() => handleDeleteItem(item.id)}
+            />
           </li>
         ))}
       </ul>
