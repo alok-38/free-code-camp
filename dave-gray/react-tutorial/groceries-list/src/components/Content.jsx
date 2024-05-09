@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
 export default function Content() {
-  const [items, setItems] = useState([
+  const defaultItems = [
     {
       id: 1,
       checked: false,
-      item: "One half pund bag of Cocoa covered Almond mix",
+      item: "One half pound bag of Cocoa covered Almond mix",
     },
     {
       id: 2,
@@ -18,7 +18,18 @@ export default function Content() {
       checked: false,
       item: "Item 3",
     },
-  ]);
+  ];
+
+  // Load items from local storage on initial render, or use default items
+  const [items, setItems] = useState(() => {
+    const storedItems = JSON.parse(localStorage.getItem("items"));
+    return storedItems || defaultItems;
+  });
+
+  // Save items to local storage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
 
   const handleCheckboxChange = (itemId) => {
     const updatedItems = items.map((item) =>
@@ -30,6 +41,10 @@ export default function Content() {
   const handleDeleteItem = (itemId) => {
     const updatedItems = items.filter((item) => item.id !== itemId);
     setItems(updatedItems);
+  };
+
+  const handleResetItems = () => {
+    setItems(defaultItems);
   };
 
   return (
