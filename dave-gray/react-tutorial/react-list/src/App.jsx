@@ -4,7 +4,7 @@ import Header from "./components/Header";
 
 export default function App() {
   return (
-    <div className="flex flex-col items-center h-screen justify-center leading-10">
+    <div className="flex flex-col items-center h-screen justify-center leading-10 max-w-96 mx-auto leading-10">
       <Header />
       <Content />
       <Footer />

@@ -39,12 +39,15 @@ export default function Content() {
       {items.length ? (
         <ul className="flex flex-col space-y-2">
           {items.map((item) => (
-            <li className="flex items-center" key={item.id}>
+            <li
+              key={item.id}
+              className="flex items-center hover:bg-gray-100 transition duration-300"
+            >
               <input
                 type="checkbox"
                 onChange={() => handleCheck(item.id)}
                 checked={item.checked}
-                className="mr-2"
+                className="mr-2 cursor-pointer h-6 w-6"
               />
               <label
                 className={item.checked ? "line-through" : ""}
@@ -57,7 +60,7 @@ export default function Content() {
                   onClick={() => handleDelete(item.id)}
                   role="button"
                   tabIndex="0"
-                  className="cursor-pointer"
+                  className="cursor-pointer transition duration-300 hover:text-red-600 text-red-400 h-6 w-6"
                 />
               </div>
             </li>
