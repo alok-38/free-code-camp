@@ -23,10 +23,10 @@ export default function Content() {
     <main>
       <ul>
         {items.map((item) => (
-          <li key={item.id}>
+          <li className="flex items-center justify-between" key={item.id}>
             <input className="mr-5" type="checkbox" name="" id="" />
             <label htmlFor="">{item.item}</label>
-            <button className="pl-5">Delete</button>
+            <FaTrashAlt className="ml-10 cursor-pointer text-red-500 transition duration-300 transform hover:scale-110" />
           </li>
         ))}
       </ul>
