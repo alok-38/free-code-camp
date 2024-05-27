@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://fav.farm/🖥" />
+  </head>
+  <body>
+    <header>
+      <h1>TODOs</h1>
+    </header>
+
+    <form id="todo-form" class="todo-form">
+      <label>
+        <span class="screen-reader-text">New TODO</span>
+        <input type="text" name="todo" />
+      </label>
+      <button class="add--button">Add</button>
+    </form>
+
+    <ol id="todo-list" class="todo-list">
+      <li>
+        <button aria-label="Complete">×</button>
+        Walk the dog
+      </li>
+      <li>
+        <button aria-label="Complete">×</button>
+        Figure out what doing with life
+      </li>
+    </ol>
+  </body>
+</html>
