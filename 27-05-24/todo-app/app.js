@@ -1,37 +1,45 @@
-// Select all buttons inside the todo list
-const todoListbuttons = document.querySelectorAll("#todo-list button");
-
-// Loop through the NodeList and add event listeners or manipulate buttons
-todoListbuttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Add your event handler logic here
-    console.log("Button clicked");
-  });
-});
-
 const addButtonElement = document.querySelector(".add--button");
-
-// Select the input element
 const inputElement = document.querySelector("input");
 const olElement = document.querySelector("ol");
 
 // Event handler
 addButtonElement.addEventListener("click", (e) => {
   e.preventDefault();
-  //   Create a new li
-  const newListItem = document.createElement("li");
-  //   Create a new button
-  const newDeleteButton = document.createElement("button");
-  // append the delete button with 'x'
-  newDeleteButton.textContent = "x";
-  //   Append the new button to the ol
-  newListItem.appendChild(newDeleteButton);
-  const acceptInput = inputElement.value;
-  //   Set text node
-  const newTextContent = document.createTextNode(acceptInput);
-  //   Append this text node to li
-  newListItem.appendChild(newTextContent);
-  //   Append the li to ol
-  olElement.appendChild(newListItem);
-  inputElement.value = "";
+
+  // Get the input value
+  const acceptInput = inputElement.value.trim();
+
+  // Only add the new item if the input is not empty
+  if (acceptInput !== "") {
+    // Create a new li
+    const newListItem = document.createElement("li");
+
+    // Create a new delete button
+    const newDeleteButton = document.createElement("button");
+    newDeleteButton.textContent = "×";
+    newDeleteButton.setAttribute("aria-label", `Complete task: ${acceptInput}`);
+    newDeleteButton.addEventListener("click", () => {
+      newListItem.remove();
+    });
+
+    // Append the delete button to the li
+    newListItem.appendChild(newDeleteButton);
+
+    // Create and append the text node to the li
+    const newTextContent = document.createTextNode(acceptInput);
+    newListItem.appendChild(newTextContent);
+
+    // Append the li to the ol
+    olElement.appendChild(newListItem);
+
+    // Clear the input field
+    inputElement.value = "";
+  }
+});
+
+// Event delegation for handling delete button clicks
+olElement.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+    e.target.closest("li").remove();
+  }
 });
