@@ -1,8 +1,10 @@
 count = 0
 name = "alok"
+
 while count < 10:
-    print(name)
-    if count == 2:
-        print("Stop being stupid")
+    print(f"{count} {name}")
+
+    if count == 5:
         break
+
     count += 1
