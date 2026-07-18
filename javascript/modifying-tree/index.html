@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading and modifying the tree</title>
+  </head>
+  <body>
+    <button>Change this document</button>
+    <h1>Header</h1>
+    <p>Paragraph</p>
+    <script>
+      const buttonEl = document.querySelector("button");
+      const headerEl = document.querySelector("h1");
+      const paraEl = document.querySelector("p");
+
+      const buttonText = buttonEl.textContent;
+      const headerText = headerEl.textContent;
+      const paraText = paraEl.textContent;
+
+      let isChanged = false;
+      let addBtn = null;
+      let count = 1;
+
+      buttonEl.addEventListener("click", () => {
+        if (!isChanged) {
+          // Change content
+          buttonEl.textContent = "Revert to original";
+          headerEl.textContent = "A dynamic document";
+          paraEl.textContent = "This is the first paragraph.";
+
+          // Create "Add more?" button
+          addBtn = document.createElement("button");
+          addBtn.textContent = "Add more?";
+          document.body.appendChild(addBtn);
+
+          // Add click behavior to new button
+          addBtn.addEventListener("click", () => {
+            count++;
+            const newPara = document.createElement("p");
+            newPara.textContent = `This is paragraph ${count}.`;
+            document.body.appendChild(newPara);
+          });
+
+          isChanged = true;
+        } else {
+          // Revert everything
+          buttonEl.textContent = buttonText;
+          headerEl.textContent = headerText;
+          paraEl.textContent = paraText;
+
+          // Remove extra paragraphs
+          document.querySelectorAll("p").forEach((p, index) => {
+            if (index !== 0) p.remove(); // keep original paragraph
+          });
+
+          // Remove button
+          if (addBtn) {
+            addBtn.remove();
+            addBtn = null;
+          }
+
+          count = 1;
+          isChanged = false;
+        }
+      });
+    </script>
+  </body>
+</html>
