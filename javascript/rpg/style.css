@@ -81,8 +81,8 @@ body {
 }
 
 .game__stat-value {
-    font-size: 1.5rem;
-    font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .game__text {
@@ -95,7 +95,13 @@ body {
 
 .game__stats,
 .game__text,
-.game__actions {
+.game__actions,
+.game__events {
   border: 2px solid black;
   padding: 1rem;
+}
+
+.game__events {
+  background-color: green;
+  color: #fff;
 }
