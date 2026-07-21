@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(7, 7, 18);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  max-width: 740px;
+  background-color: #fff;
+}
+
+.game__stats {
+  display: flex;
+}
+
+.game__text {
+  background-color: #040303;
+  color: #fff;
+}
